@@ -131,15 +131,15 @@ Typing `python` *(or `python3`)* into the terminal will enter the Python console
 What is a benefit of using Markdown?
 https://www.markdownguide.org/getting-started/
 
- - Answer:
+ - Answer:A benefit of using Markdown is that it increases productivuty since it is a lightweight markup language that you can use to add formatting elements to plaintext text documents. 
 
 What does "cd" stand for?
 
- - Answer:
+ - Answer:"cd" stands for change directory
 
 Did you get stuck at any point or become confused with your console? (yes/no) If so, what happened? How did you solve it?
 
- - Answer:
+ - Answer: 
 
 Did you consider searching google for other commands to run? What did you try? 
 
