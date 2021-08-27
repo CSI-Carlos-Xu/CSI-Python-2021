@@ -131,23 +131,23 @@ Typing `python` *(or `python3`)* into the terminal will enter the Python console
 What is a benefit of using Markdown?
 https://www.markdownguide.org/getting-started/
 
- - Answer:A benefit of using Markdown is that it increases productivuty since it is a lightweight markup language that you can use to add formatting elements to plaintext text documents. 
+ - Answer:A benefit of using Markdown is that it increases productivity since it is a lightweight markup language that you can use to add formatting elements to plaintext text documents. 
 
 What does "cd" stand for?
 
- - Answer:"cd" stands for change directory
+ - Answer:The abbreviation "cd" stands for change directory.
 
 Did you get stuck at any point or become confused with your console? (yes/no) If so, what happened? How did you solve it?
 
- - Answer: 
+ - Answer:Yes, I got stuck at trying to access Python within Visual Studio Code. I solved it by going into the Python installer and adding the program into the branch directories.
 
 Did you consider searching google for other commands to run? What did you try? 
 
- - Answer:
+ - Answer:During class, I didn't consider searching google for other commands to run since I ran out of time. However, I'm interested in learning new commands.
 
 What would you like to program? 
 
- - Answer:
+ - Answer:I would like to program a sport's videogame.
 
 Type down any class notes below this sentence:
 
