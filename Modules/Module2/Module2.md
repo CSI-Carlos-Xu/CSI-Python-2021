@@ -147,7 +147,7 @@ Did you consider searching google for other commands to run? What did you try?
 
 What would you like to program? 
 
- - Answer:I would like to program a sport's videogame.
+ - Answer:I would like to program a sport's videogame or a chess game.
 
 Type down any class notes below this sentence:
 
