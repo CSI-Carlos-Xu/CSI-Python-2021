@@ -96,24 +96,24 @@ print(type(age))
 
 What is the difference between "42" and 42.
 
- - Answer:
+ - Answer:The difference between "42" and 42 is that "42" is a string that will be printed as a text or as a single data object. However, 42 is an integer. Therefore, it can be used in math like in an equation.
 
 Define the boolean operators: >, <, ==, >=, <=
 
- - Answer:
+ - Answer: The boolean operators are the following: > which means greater than (a = 4; b = 3; a > b), < means less than (a = 3; b = 4; a < b), == means equal to (a = 4; b = 2 + 2; a == b), >= means greater than or equal to (a = 2; b = 1; a >= b), and <= means less than or equal to (a = 1; b = 2; a <= b).
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
 
- - Answer:
+ - Answer: You write its index within brackets. x = arr[4]
 
 What is the first index of a list? Why?
 
- - Answer:
+ - Answer:The first index of a list is 0 because in coding it all starts at 0 and then 1,2,3 and so on.
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer:
+ - Answer:How many people own a computer? The exact number of how many people owns one can be determined, but as of right now the answer is unknown.
 
 Type down any class notes below this sentence:
 
