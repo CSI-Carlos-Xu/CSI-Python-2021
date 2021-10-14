@@ -82,8 +82,24 @@ Give a python example for each logic operator in the module image.
 
  - Answers:
    - OR:
+   Basketball = 2
+   Soccer = 1
+   Volleyball = 1
+   if (Basketball > Soccer or Basketball >= Volleyball):
+    print("you will gain more speed") #true
    - AND: 
+   Spanish = 1
+   English = 2
+   French = 3
+   Italian = 4
+   if (English > Spanish and French < Italian):
+    print("you'll be able to communicate with people from around the world") #true
    - NOT: 
+   Basketball = 2
+   Soccer = 1
+   if not(Basketball < Soccer):
+    print("Lebron's the best) #true
+
 
 
 Type down any class notes below this sentence:
