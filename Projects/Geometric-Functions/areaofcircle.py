@@ -22,5 +22,3 @@ printAreaofCircle(areaofcircle(7.4), "ft^2")
 printAreaofCircle(areaofcircle(4.9837), "m^2")
 printAreaofCircle(areaofcircle(2.144E5), "mm^2")
 printAreaofCircle(areaofcircle(988.1E-3), "cm^2")
-
-print("Prueba")
