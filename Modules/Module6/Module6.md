@@ -91,7 +91,7 @@ Why are JSON formats important?
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
  - Answer:
- Microsoft Office = {
+ MicrosoftOffice = {
 
  "Word": "color blue",
  "Power Point": "color red",
