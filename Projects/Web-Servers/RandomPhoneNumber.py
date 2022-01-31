@@ -4,4 +4,4 @@ class RandomPhoneNumber:
         self.uid = uid
         self.phone_number = phone_number
         self.cell_phone = cell_phone
-        self.cell_phone_in_e16 = cell_phone_in_e164
+        self.cell_phone_in_e164 = cell_phone_in_e164
