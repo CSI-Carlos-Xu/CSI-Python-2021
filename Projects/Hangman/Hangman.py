@@ -58,23 +58,46 @@ steps = ["""
 
 print(steps[0])
 
-def get_word():
+invalid_specialcaracters= ["!","@","~","`","#","$","%","^","&","*","(",")","-","_","+","=","[","]","{","}","|",":",";","'","<",",",".",">","/","?"]
+invalid_numbers= ["9","8","7","6","5","4","3","2","1","0"]
+
+def print_word():
     word_list =  ["gimnasia", "tenis", "ciclismo", "rugby", "boliche", "vela", "baloncesto", "voleibol", "remo", "surfing", "patinaje", "balompie", "natacion", "pelota", "ajedrez", "golf", "badminton", "boxeo", "esgrima", "hockey"]
     return random.choice(word_list)
 
-def find_input():
+print_word()
 
-    letter = input("choose letter")
+def get_input():
 
-    # if(letter != #)
+    while(True):
+        letter = input("Chose your letter")
 
-    while not guessed and tries > 0:
-        guess = input("Guess the word:").upper()
-        if len(guess) ==1 and guess.isalpha():
-            if guess in guessed_letters:
-                print("already used that letter", guess)
-                elif guess not in word:
-                    print(guess,"Not the word:")
+        if(len(letter)!= 1):
+            print("Only choose one letter")
+            continue
+
+        if(letter in invalid_specialcaracters):
+            print("It can't be a special characters")
+            continue
+
+        if(letter in invalid_numbers):
+            print("No numbers are allowed")
+            continue
+
+        return letter
+
+    def print_word():
+         temp:str = ""
+         for letter in my_word
+         if (letter not in )
+
+
+    
+
+
+
+   
+
 
 
 
