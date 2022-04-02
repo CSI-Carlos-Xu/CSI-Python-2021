@@ -23,8 +23,12 @@ clock = pygame.time.Clock() #This allows the coder to use the clock.tick variabl
 snake_block=10 #Dimensions of the snake. 
 snake_speed=20 #Speed of the snake
 
-font_style = pygame.font.SysFont(None, 35) #Indicates the font and size of the letters for game over message.
+font_style = pygame.font.SysFont("bahnschrift", 35) #Indicates the font and size of the letters for game over message.
 score_font = pygame.font.SysFont("comicsansms", 35) #Indicates the font and size of the letters for the score. 
+
+def Your_score(score): #Defining the score of the game. 
+    value = score_font.render("Your Score: " + str(score), True, black) #Indicates the three parameters for the score [the correct message ("Your Score"), its number (the string) and its color].
+    dis.blit(value, [0, 0]) #The location of the score in the display of the game.  
 
 def our_snake(snake_block, snake_list): #Defining the body of the snake. 
     for x in snake_list: #When eating food, the body's snake will grow. 
@@ -32,16 +36,16 @@ def our_snake(snake_block, snake_list): #Defining the body of the snake.
 
 def message(msg,color): #defining the message function.
     mesg = font_style.render(msg, True, color) #Indicates the three parameters for the game over message (the correct message and its color)
-    dis.blit(mesg, [dis_width/5, dis_height/2]) #Indicates where the message is going to appear (its position)
+    dis.blit(mesg, [dis_width/9, dis_height/2]) #Indicates where the message is going to appear (its position).
 
-def gameLoop():  #Creating a function
+def gameLoop():  #Creating a function for a gameloop. 
     game_over = False ##The display of the game closes when losing. 
     game_close = False #Appears the message of "Game over! Press Q-Quit or C-Play Again"
 
     x1 = dis_width/2 #indicates the position of the snake in the display in terms of the x-axis. 
     y1 = dis_height/2 #indicates the position of the snake in the display in terms of the y-axis. 
-    x1_change = 0  # This is to hold the updating values of the x and y coordinates.    
-    y1_change = 0  # This is to hold the updating values of the x and y coordinates.   
+    x1_change = 0  #This is to hold the updating values of the x and y coordinates.    
+    y1_change = 0  #This is to hold the updating values of the x and y coordinates.   
 
     snake_List = [] #Defines the snake's body as a list. 
     Length_of_snake = 1 #Its body will start with one block. 
@@ -52,6 +56,7 @@ def gameLoop():  #Creating a function
         while game_close == True: # After the game is over. 
             dis.fill(white) #The display will be white. 
             message("Game over! Press Q-Quit or C-Play Again", red) ##It will appear this message on the screen. 
+            Your_score(Length_of_snake - 1) #The score of the game will increase by one every time the snake eats one block of food. This means that the score will increase as much as the snake's body.
             pygame.display.update() #This step updates the display of the screen.
 
             for event in pygame.event.get(): #get every event as a list and run a forloop over them. 
@@ -101,6 +106,8 @@ def gameLoop():  #Creating a function
                 game_close = True #It will appear the game over message and the game will close. 
  
         our_snake(snake_block, snake_List) #Calls the function our_snake with parameters snake_block and snake_List. 
+
+        Your_score(Length_of_snake - 1) #The score of the game will increase by one every time the snake eats one block of food. This means that the score will increase as much as the snake's body.
  
  
         pygame.display.update() #Updates the display.
@@ -110,92 +117,11 @@ def gameLoop():  #Creating a function
             foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0 #Moves the food's y values elsewhere.
             Length_of_snake += 1 #The lenght of the snake will increase by one block. 
 
-    
 
         if x1 == foodx and y1 == foody: #This describes when the snake eats the food. 
             print("Yummy!!") #This will be printed in the terminal when the snake eats the food. 
         clock.tick(snake_speed) #Set the game speed to snake_speed. 
 
-    pygame.quit() #uninitialize the screen display
-    quit() #uninitialize everything
-gameLoop() #Calls the function of the game again. 
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
- 
- 
-
-   
-
-        
-
-       
-
-    
-
-    
-
-
- 
-      
-       
- 
-    
-        
- 
-
-
-
- 
-
- 
-   
- 
-
-
- 
-
-
-
-
- 
-
-
-
-        
- 
-
- 
-
-   
-  
-
-
-
-
-
-
-
-
-    
-        
-           
- 
-
-
-
-
- 
+    pygame.quit() #Uninitialize the screen display. 
+    quit() #Uninitialize everything. 
+gameLoop() #Calls the function that makes the game.  
